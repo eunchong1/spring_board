@@ -5,9 +5,11 @@ server:
 # database 연동 설정
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db_codingrecipe?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    username: user_codingrecipe
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#   각자 PC에 만들어 놓은 Database 이름을 서야 합니다.
+    url: jdbc:mysql://localhost:3306/spring_board?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+#   mysql에 생성한 사용자 계정 정보를 써야함
+    username: user
     password: 1234
   thymeleaf:
     cache: false
